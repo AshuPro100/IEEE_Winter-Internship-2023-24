@@ -145,10 +145,10 @@ def run_sequence(scf1,scf2):
             controller=PositionHlCommander.CONTROLLER_PID) as pc2:
             time.sleep(5.0)
 
-            setpoint1 = [-1.3, -1, 2]
-            setpoint2 = [1.3, -1, 2]
-            setpoint3 = [1.3, 1, 2]
-            setpoint4 = [-1.3, 1, 2]
+            setpoint1 = [-1, -1, 1]
+            setpoint2 = [1, -1, 1]
+            setpoint3 = [1, 1, 1]
+            setpoint4 = [-1, 1, 1]
 
             pc1.go_to(setpoint1[0], setpoint1[1],setpoint1[2])
             pc2.go_to(setpoint3[0], setpoint3[1],setpoint3[2])
